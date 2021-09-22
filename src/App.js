@@ -16,7 +16,8 @@ export default class App extends React.Component {
     this.state={
       searchQuery: '',
       location: {},
-      error: false
+      coord2: null,
+      error: false,
     }
   }
 
@@ -35,21 +36,17 @@ export default class App extends React.Component {
       this.setstate({error: true})
     };
     var coord2 = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_CITY_KEY}&center=${this.state.location.lat},${this.state.location.lon}&zoom=12&format=jpeg`;
-    const response2 = await axios.get(coord2);
-    const mapLocation = response2.config.url;
-    console.log(mapLocation);
 
     this.setState({ 
-      mapLocation,
-    })
+      coord2,
+    });
   
   }; 
   
   render(){
     return (
       <>
-      <Form
-        >
+      <Form>
         <h1>
           Enter a City Name
         </h1>
@@ -59,7 +56,7 @@ export default class App extends React.Component {
         </Form>
       <Col>
       <Card style={{ margin: '20px', width: '20 rem' }}>
-        <Card.Img variant="top" src={this.state.mapLocation} />
+        <Card.Img variant="top" src={this.state.coord2} />
         <Card.Body>
           {this.state.location.place_id &&
           <Card.Title>City Name: {this.state.location.display_name}</Card.Title>
