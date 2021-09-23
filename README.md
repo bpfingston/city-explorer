@@ -67,6 +67,36 @@ Finish time: 8:30 pm
   
 Actual time needed to complete: 30 min  
 
+Name of feature: Weather (placeholder)
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 2:30 pm
+
+Finish time: 7:00 pm
+
+Actual time needed to complete: 4.5 hours
+
+Name of feature: Errors (revisited)
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 8 pm
+
+Finish time: 12pm
+
+Actual time needed to complete: 4 hours
+
+Name of feature: Publish: Deploy your server.
+
+Estimate of time needed to complete: 15 minutes
+
+Start time: 12:00
+
+Finish time: 12:30
+
+Actual time needed to complete: 30 min
+
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
