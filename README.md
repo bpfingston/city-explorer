@@ -100,4 +100,7 @@ Actual time needed to complete: 30 min
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
-[Web request-response cycle](./img/response_cycle.png)
+![WRRC 09/20/2021](./img/2021-09-20.png)
+![WRRC 09/21/2021](./img/2021-09-21.png)
+![WRRC 09/22/2021](./img/2021-09-22.png)
+![Trello](https://trello.com/b/6ywXyRff/module2-city-explorer)

@@ -17,7 +17,6 @@ export default class Main extends Component{
           searchQuery: '',
           location: {},
           weather:[],
-          mappingCoord: null,
           error: false,
 
         }
@@ -45,22 +44,27 @@ export default class Main extends Component{
             });
 
 
-            let weatherCoord = `${server}/weather?searchQuery=${this.state.searchQuery}&lat=${this.state.location.lat}&lon=${this.state.location.lon}`;
+            let weatherCoord = `${server}weather?searchquery=${this.state.searchQuery}&lon=${this.state.location.lon}&lat=${this.state.location.lat}`;
+            console.log(weatherCoord)
             var response2 = await axios.get(weatherCoord)
-            var weatherReport= response2.data;
-            console.log(weatherReport)
-            this.setState({
-                weather: weatherReport,
-            })
-            console.log(weatherReport)
-            } catch(error) {
-            this.setState({error: true})
-            };
+            
+            if(response2.status !== 200){
+                this.setState({
+                    error:true,
+                })
+            } else {
+                    var weatherReport= response2.data;
+                    this.setState({weather: weatherReport});
+            }}catch {
+                this.setState({
+                    error: true,
+                });
+        };
     };
 
-    handleChange = async (query) =>{
+    handleSubmit = async (query) =>{
         this.setState({
-            searchQuery:query
+            searchQuery: query
         });
     };
 
@@ -68,7 +72,7 @@ export default class Main extends Component{
     
         return(
           <>
-          <LocationData location={this.state.location} searchQuery={this.state.searchQuery} update={this.handleChange} getLocationData={(event) => this.getLocationData(event)}/>
+          <LocationData location={this.state.location} searchQuery={this.state.searchQuery} update={this.handleSubmit} getLocationData={(event) => this.getLocationData(event)}/>
           <RenderCity testError={this.state.error} locationUpdate={this.state.location} mappingCoord={this.state.mappingCoord} />
           <WeatherData weather={this.state.weather} />
           </>
