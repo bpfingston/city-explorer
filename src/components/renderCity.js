@@ -1,13 +1,13 @@
 import { Component } from "react"
 import Card from 'react-bootstrap/Card'
-import Col from 'react-bootstrap/Col'
+
 
 
 export default class renderCity extends Component{
 
     render(){
         return (
-            <Col>
+            <Card>
             {this.props.locationUpdate.display_name &&
                 <Card style={{ margin: '20px', width: '20 rem' }}>
                 <Card.Img variant="top" src={this.props.mappingCoord} />
@@ -21,12 +21,12 @@ export default class renderCity extends Component{
                 {this.props.testError&&
                 <Card style={{width: '20 rem'}}>
                 <Card.Body>
-                    <Card.Title>error: Unable to geocode</Card.Title>
-                    <Card.Text> Please Enter A Valid City</Card.Text>
+                    <Card.Title>ErRor</Card.Title>
+                    <Card.Text>Please enter a Valid City</Card.Text>
                 </Card.Body>
                 </Card>
                 }
-            </Col>
-        );
-    };
-};
+            </Card>
+        )
+    }
+}
