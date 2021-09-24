@@ -1,8 +1,9 @@
 # City Explorer
 
-**Author**: Bryce Pfingston
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
-**URL**: [Bryce's Bestest City Explorer](https://brycesbestestcityexplorer.netlify.app/)
+**Author**: Bryce Pfingston  
+**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)  
+**URL**: [Bryce's Bestest City Explorer](https://brycesbestestcityexplorer.netlify.app/)  
+[The Backend](https://github.com/bpfingston/city-explorer-api)  
 
 //testing for fixes//more
 
