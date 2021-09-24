@@ -99,10 +99,51 @@ Finish time: 12:30
 
 Actual time needed to complete: 30 min
 
+Name of feature: Weather (live)
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 2:30
+  
+Finish time: 3:00
+
+Actual time needed to complete: 30 min.
+
+Name of feature:Movies 
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 3:00
+
+Finish time: 10:00
+
+Actual time needed to complete: 6 hours
+
+Name of feature: Refactor: Modularize the back-end codebase.
+
+Estimate of time needed to complete: 15 min?
+
+Start time: 11:15
+
+Finish time: 11:30
+
+Actual time needed to complete: 15 min
+
+Name of feature: Refactor: Componentize the front-end codebase.
+
+Estimate of time needed to complete: 15
+
+Start time: 12
+
+Finish time: 1215
+
+Actual time needed to complete: 15
+
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
 ![WRRC 09/20/2021](./img/2021-09-20.png)
 ![WRRC 09/21/2021](./img/2021-09-21.png)
 ![WRRC 09/22/2021](./img/2021-09-22.png)
+![WRRC 09/23/2021](./img/2021-09-23.png)
 ![Trello](https://trello.com/b/6ywXyRff/module2-city-explorer)
