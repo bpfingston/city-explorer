@@ -1,18 +1,15 @@
 import { Component } from "react";
+import { Container } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 
 
 export default class weatherRender extends Component {
   render() {
     return (
-      <>
+      <Container>
         {this.props.weather.map((weatherData, idx) => {
             return(
-            <Card
-              style={{
-              width: "18rem",
-              height: "15rem",}}
-              key={idx}>
+            <Card key={idx}>
             <Card.Title>Forecast</Card.Title>  
               <Card.Body>
                 <Card.Text>Date: {weatherData.date}</Card.Text>
@@ -21,7 +18,7 @@ export default class weatherRender extends Component {
             </Card>
             )
         })};
-      </>
+      </Container>
     );
   };
 }
