@@ -1,5 +1,7 @@
 import { Component } from "react"
+import { Container } from "react-bootstrap"
 import Card from 'react-bootstrap/Card'
+
 
 
 
@@ -7,9 +9,9 @@ export default class renderCity extends Component{
 
     render(){
         return (
-            <Card>
+            <Container>
             {this.props.locationUpdate.display_name &&
-                <Card style={{ margin: '20px', width: '20 rem' }}>
+                <Card >
                 <Card.Img variant="top" src={this.props.mappingCoord} />
                 <Card.Body>
                     <Card.Title>City Name: {this.props.locationUpdate.display_name}</Card.Title>
@@ -26,7 +28,7 @@ export default class renderCity extends Component{
                 </Card.Body>
                 </Card>
                 }
-            </Card>
+            </Container>
         )
     }
 }
