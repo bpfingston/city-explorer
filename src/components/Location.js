@@ -16,7 +16,7 @@ export default class LocationForm extends Component{
             <>
                 <Form>
                     <h1>Enter a City Name</h1>
-                <Form.Control onChange={ this.formEvent}
+                <Form.Control onChange={ this.formEvent }
                     type="text" placeholder="Type in a City"/>
                 <Button onClick={(event) => 
                     this.props.getLocationData(event)} variant="primary">Explore?</Button>

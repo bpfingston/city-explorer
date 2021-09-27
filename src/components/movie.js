@@ -12,7 +12,7 @@ export default class movieRender extends Component {
             <Card key={idx}>
             <Card.Title>{movieData.title}</Card.Title>  
               <Card.Body>
-                <Card.Img variant="right" src={movieData.image_url}/>
+                <Card.Img variant="right" src={'https://www.themoviedb.org/t/p/w300_and_h450_bestv2'}/>
                 <Card.Text>Average Votes: {movieData.averagevotes}</Card.Text>
                 <Card.Text>Total Votes: {movieData.totalvotes}</Card.Text>
                 <Card.Text>Popularity: {movieData.popularity}</Card.Text>
