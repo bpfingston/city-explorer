@@ -20,7 +20,6 @@ export default class Main extends Component{
           weather:[],
           error: false,
           movie:[],
-
         }
     }
 
@@ -55,7 +54,7 @@ export default class Main extends Component{
                     error:true,
                 })
             } else {
-                    var weatherReport= response2.data;
+                    var weatherReport= response2.data.data;
                     this.setState({weather: weatherReport});
             }}catch {
                 this.setState({
@@ -66,7 +65,7 @@ export default class Main extends Component{
 
             const movieCall = `${server}movie?searchquery=${this.state.searchQuery}`
             var movie2 = await axios.get(movieCall)
-            var movieReport = movie2.data
+            var movieReport = movie2.data.data
             console.log(movieReport.vote_average)
 
             this.setState({
